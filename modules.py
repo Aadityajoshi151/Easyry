@@ -1,3 +1,4 @@
 def func1(path,params):
-    print(path)
+    path=path[0]
+    print(f"Path Obtained: {path}")
     input("Press any key to continue...")
