@@ -1,6 +1,6 @@
 import os
 import shutil
-
+import pyperclip as pc
 
 def moveToFolder(path,params):
     path=path[0]
@@ -9,3 +9,6 @@ def moveToFolder(path,params):
     os.mkdir(name)  
     newpath = path[:path.rfind("\\")]+"\\"+name
     shutil.move(path,newpath)
+
+def copyPath(path,params):
+    pc.copy(path[0])
