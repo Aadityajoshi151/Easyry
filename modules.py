@@ -1,4 +1,11 @@
-def func1(path,params):
+import os
+import shutil
+
+
+def moveToFolder(path,params):
     path=path[0]
-    print(f"Path Obtained: {path}")
-    input("Press any key to continue...")
+    name = path[path.rfind("\\")+1:]
+    name = name[:name.rfind(".")]
+    os.mkdir(name)  
+    newpath = path[:path.rfind("\\")]+"\\"+name
+    shutil.move(path,newpath)
