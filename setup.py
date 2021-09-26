@@ -7,7 +7,8 @@ if ch == 1:
     cm.add_items([
                 menus.ContextCommand("📁 Move To Folder", python=modules.moveToFolder),
                 menus.ContextCommand("📄 Copy Path To Clipboard", python=modules.copyPath),
-                menus.ContextCommand("📄 Copy Name To Clipboard", python=modules.copyName)
+                menus.ContextCommand("📄 Copy Name To Clipboard", python=modules.copyName),
+                menus.ContextCommand("📛 Rename With Random String", python=modules.renameRandom)
             ])
     cm.compile()
     print("Easyry Installed!")
