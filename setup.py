@@ -8,7 +8,8 @@ if ch == 1:
                 menus.ContextCommand("📁 Move To Folder", python=modules.moveToFolder),
                 menus.ContextCommand("📄 Copy Path To Clipboard", python=modules.copyPath),
                 menus.ContextCommand("📄 Copy Name To Clipboard", python=modules.copyName),
-                menus.ContextCommand("📛 Rename With Random String", python=modules.renameRandom)
+                menus.ContextCommand("📛 Rename With Random String", python=modules.renameRandom),
+                menus.ContextCommand("⏰ Rename With Timestamp",python=modules.renameTimestamp)
             ])
     cm.compile()
     print("Easyry Installed!")
