@@ -7,8 +7,10 @@
 **Step 2)** Install the requirements using:
 `pip install -r requirements.txt`
 
-**Step 3)** Run setup file using `python setup.py`.
+**Step 3)** Move in 'src' folder using `cd src`.
 
-**Step 4)** Enter `1` when prompted for installation.
+**Step 4)** Run setup file using `python setup.py`.
+
+**Step 5)** Enter `1` when prompted for installation.
 
 Easyry will be added to the context menu.
