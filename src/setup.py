@@ -1,7 +1,9 @@
 from context_menu import menus
 import modules
 
-ch=int(input("Press 1 to install and 2 to uninstall\n"))
+print("Press 1 to install Easyry")
+print("Press 2 to uninstall Easyry")
+ch=int(input())
 if ch == 1:
     cm = menus.ContextMenu("Easyry", type="FILES")
     cm.add_items([
@@ -9,7 +11,8 @@ if ch == 1:
                 menus.ContextCommand("📄 Copy Path To Clipboard", python=modules.copyPath),
                 menus.ContextCommand("📄 Copy Name To Clipboard", python=modules.copyName),
                 menus.ContextCommand("📛 Rename With Random String", python=modules.renameRandom),
-                menus.ContextCommand("⏰ Rename With Timestamp",python=modules.renameTimestamp)
+                menus.ContextCommand("⏰ Rename With Timestamp",python=modules.renameTimestamp),
+                menus.ContextCommand("⏰ Append Timestamp", python=modules.appendTimestamp)
             ])
     cm.compile()
     print("Easyry Installed!")
@@ -17,3 +20,5 @@ if ch == 1:
 elif ch == 2:
     menus.removeMenu("Easyry", "FILES")
     print("Easyry Uninstalled!")
+else:
+    print("Wrong choice")
