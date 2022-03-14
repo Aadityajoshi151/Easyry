@@ -12,7 +12,8 @@ if ch == 1:
                 menus.ContextCommand("📄 Copy Name To Clipboard", python=modules.copyName),
                 menus.ContextCommand("📛 Rename With Random String", python=modules.renameRandom),
                 menus.ContextCommand("⏰ Rename With Timestamp",python=modules.renameTimestamp),
-                menus.ContextCommand("⏰ Append Timestamp", python=modules.appendTimestamp)
+                menus.ContextCommand("⏰ Append Timestamp", python=modules.appendTimestamp),
+                menus.ContextCommand("☠️ Corrupt File (Dangerous)", python=modules.corruptFile)
             ])
     cm.compile()
     print("Easyry Installed!")
