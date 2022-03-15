@@ -43,12 +43,18 @@ def appendTimestamp(path, params):
     newname = f"{removeExtension(newname)}-{timestamp}"
     rename(path, newname)
 
+#Corrupt File
 def corruptFile(path, params):
     path=path[0]
     res = ctypes.windll.user32.MessageBoxW(0, "This will cause permanent damage to the file which might not be reversible. Are you sure you want to corrupt the file?", "Are you sure?", 0x04 | 0x30)
     if res==6:
         #Code to corrupt file will go here
         print("Done")
+
+#Duplicate File
+def duplicateFile(path, params):
+    path=path[0]
+    #Code to duplicate file will go here
 
 #Misc required functions:-
 def getTimeStamp():

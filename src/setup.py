@@ -13,7 +13,8 @@ if ch == 1:
                 menus.ContextCommand("📛 Rename With Random String", python=modules.renameRandom),
                 menus.ContextCommand("⏰ Rename With Timestamp",python=modules.renameTimestamp),
                 menus.ContextCommand("⏰ Append Timestamp", python=modules.appendTimestamp),
-                menus.ContextCommand("☠️ Corrupt File (Dangerous)", python=modules.corruptFile)
+                menus.ContextCommand("☠️ Corrupt File (Dangerous)", python=modules.corruptFile),
+                menus.ContextCommand("🗐 Duplicate File", python=modules.duplicateFile)
             ])
     cm.compile()
     print("Easyry Installed!")
