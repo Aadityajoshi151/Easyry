@@ -54,7 +54,11 @@ def corruptFile(path, params):
 #Duplicate File
 def duplicateFile(path, params):
     path=path[0]
-    #Code to duplicate file will go here
+    extension = pathlib.Path(path).suffix
+    newname = extractName(path)
+    newname = removeExtension(newname)
+    newpath = path[:path.rfind("\\")]+"\\"+newname+"_Duplicate"+extension
+    shutil.copy(path, newpath)
 
 #Misc required functions:-
 def getTimeStamp():
