@@ -48,8 +48,9 @@ def corruptFile(path, params):
     path=path[0]
     res = ctypes.windll.user32.MessageBoxW(0, "This will cause permanent damage to the file which might not be reversible. Are you sure you want to corrupt the file?", "Are you sure?", 0x04 | 0x30)
     if res==6:
-        #Code to corrupt file will go here
-        print("Done")
+        f = open(path, "w")
+        f.read()
+        f.close()
 
 #Duplicate File
 def duplicateFile(path, params):
